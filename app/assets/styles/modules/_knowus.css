@@ -1,0 +1,27 @@
+.knowus {
+	text-align: center;
+
+
+	&__title {
+		position: relative;
+		top: -1000px;
+		color: #f6fe00;
+		font-size: 8rem;
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__icon {
+		position: relative;
+		top: -900px;
+		height: auto;
+		width: 20%;
+	}
+
+	&__image {
+		align-self: center;
+		height: auto;
+		width: 100%;
+	}
+}

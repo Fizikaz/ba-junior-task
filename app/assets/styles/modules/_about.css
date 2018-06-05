@@ -1,0 +1,16 @@
+.about {
+	display: flex;
+	flex-direction: row;
+
+	&__title {
+		flex: 50%;
+		text-align: center;
+		font-size: 3rem;
+	}
+
+	&__description {
+		flex: 50%;
+		padding: 40px;
+
+	}
+}

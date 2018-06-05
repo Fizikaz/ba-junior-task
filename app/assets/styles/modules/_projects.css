@@ -1,0 +1,70 @@
+.projects {
+	/*
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+*/
+	max-width: 100%;
+
+
+
+	&__item {
+		position: relative;
+		flex-wrap: wrap;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	&__headline {
+		display: flex;
+		justify-content: center;
+		font-size: 3rem;
+		padding: 20px 0px;
+	}
+
+	&__item-image {
+		flex: 1;
+		width: 100%;
+		z-index: 0;
+		filter: brightness(70%);
+		@mixin atSmall {
+			width: 100%;
+		}
+		@mixin atLarge {
+			width: 50%;
+			height: inherit;
+		}
+	}
+
+	&__item-title {
+		position: relative;
+		top: -85px;
+		padding-left: 40px;
+		margin: 0px;
+		font-size: 2rem;
+		z-index: 1;
+		color: white;
+	}
+
+	&__item-description {
+		position: absolute;
+		color: white;
+		max-width: 100%;
+		padding: 10px;
+		margin: 0px;
+		font-size: 1.3rem;
+		overflow-wrap: break-word;
+		top: 0px;
+		left: 0px;
+		@mixin atMedium {
+			width: 100%;
+			padding: 40px;
+			font-size: 2rem;
+		}
+		@mixin atLarge {
+			width: 50%;
+			font-size: 1.5rem;
+			height: inherit;
+		}
+	}
+}

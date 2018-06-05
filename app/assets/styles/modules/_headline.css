@@ -1,0 +1,72 @@
+.headline {
+	font-weight: 500;
+	font-size: 3rem;
+	background-color: #1c1c1d;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	display: flex;
+
+
+	&__left {
+		float: left;
+		margin: 0px;
+		padding: 0px;
+	}
+	&__right {
+		right: right;
+	}
+
+	@mixin atLarge {
+		width: 100%;
+		clear: both;
+	}
+
+	&__image {
+		filter: brightness(80%);
+
+		@mixing atLarge {
+			float: right;
+			margin: 0px;
+			height: inherit;
+		}
+	}
+
+	&__first-words {
+
+		z-index: 1;
+		margin: 0px 0px;
+		color: #fdfdfd;
+		font-size: 3rem;
+		padding: 30px 0px 30px 20px;
+
+		@mixin atLarge {
+			padding: 200px 0px 0px 100px;
+			font-size: 6rem;
+
+		}
+	}
+
+	&__second-words {
+		z-index: 1;
+		color: #f6fe00;
+		font-size: 4rem;
+		padding: 18px 0px 40px 20px;
+		margin: 0px;
+
+
+		@mixin atLarge {
+
+			font-size: 9rem;
+			margin: 0px 0px;
+			padding: 0px 0px 100px 100px;
+		}
+	}
+
+	&__line {
+		z-index: 1;
+		top: 450px;
+		width: 100%;
+		height: 15px;
+		background-image: linear-gradient(to right bottom, #7036e3, #6835e4, #5f35e4, #5634e5, #4b34e5);
+	}
+}

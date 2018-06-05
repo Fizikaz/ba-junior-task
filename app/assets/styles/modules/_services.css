@@ -1,0 +1,31 @@
+.services {
+	display: flex;
+	flex-direction: row;
+
+
+	&__title {
+		flex: 50%;
+		font-size: 3rem;
+		background: linear-gradient(to bottom right, #7038e4, #4938e4);
+		display: flex;
+		align-items: center;
+		color: white;
+		justify-content: center;
+	}
+
+	&__list {
+		flex: 50%;
+		padding: 40px 0px 40px 40px;
+	}
+
+	&__list-item {
+		display: flex;
+		padding: 10px 0px 10px 0px;
+		border-bottom: 1px solid grey;
+	}
+
+	&__list-item-number {
+		padding-right: 20px;
+		color: grey;
+	}
+}
